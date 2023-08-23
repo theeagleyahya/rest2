@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 10px;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgb(233, 70, 225) 20%, rgb(70, 233, 219)70%);
+}
+
+main{
+    
+}
+
+header{
+    text-align: center;
+}
+
+header > img{
+    width: 80px;
+    transform: rotate(40deg);
+}
+
+header > h2 {
+    margin-bottom: 4px;
+    color: rgb(86, 219, 219);
+}
+
+aside{
+    height: fit-content;
+    color: black;
+    padding-right: 5px;
+    background: rgb(70, 233, 219)
+}
+
+aside .contact{
+    margin-top: 10px;
+    float: right;
+    font-weight: bold;
+    font-size: 17px;
+    color: rgb(135, 13, 172);
+}
+
+aside img{
+    display: block;
+    width: 17px;
+    clear: both;
+    float: right;
+}
+
+aside .center{
+    width: fit-content;
+    display: flow-root;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+aside .phone{
+    float: right;
+    margin-right: 5px;
+    font-size: 16px;
+    color:rgb(230, 18, 35);
+}
+
+aside .phone::after{
+    content: ":";
+    display: inline-block;
+    margin-left: 6px;
+}
+
+
+aside > hr{
+    display: inline-block;
+    margin-top: 5px;
+    width: 100%;
+    border-color: rgb(233, 70, 225);
+    background-color: aqua;
+}
+
+aside > p{
+    color: rgb(228, 23, 200);
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: .4px;
+    text-align: right;
+
+}
+
+.images{
+    display: grid;
+    grid-template-columns: 170px 170px;
+    grid-template-rows: 140px 140px;
+    column-gap: calc(100vw - 365px);
+    height: fit-content;
+}
+
+.images > img{
+    width: 175px;
+    height: 140px;
+    
+}
